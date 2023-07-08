@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+        display: flex;
+      }
+      .box:nth-child(1){
+        height: 200px;
+        flex-grow: 1;
+        width: 200px;
+        background-image: url(1.jpg);
+      }  
+        
+       .box:nth-child(2){
+        height: 200px;
+        width: 200px;
+        background-image: url(2.jpg); 
+      }
+       .box:nth-child(3){
+        height: 200px;
+        flex-shrink: 0;
+        width: 200px;
+        background-image: url(3.jpg); 
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box"></div>
+    <div class="box"></div> 
+    <div class="box"></div>
+  </div>
+    
+
+   
+</body>
+</html>
